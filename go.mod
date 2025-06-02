@@ -1,3 +1,3 @@
-module github.com/CalmaIndustry/portfolio-backend
+module portfolio-backend
 
 go 1.24.3
