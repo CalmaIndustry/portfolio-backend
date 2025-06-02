@@ -6,13 +6,14 @@ import (
 )
 
 type Skill struct {
-	ID    int    `json:"id"	`
+	ID    int    `json:"id"`
 	Title string `json:"title"`
+	Image string `json:"image"`
 }
 
 func GetSkill(w http.ResponseWriter, req *http.Request) {
 	skills := []Skill{
-		{ID: 1, Title: "Go"},
+		{ID: 1, Title: "Go", Image: "/images/test.png"},
 	}
 
 	w.Header().Set("Content-Type", "application/json")
